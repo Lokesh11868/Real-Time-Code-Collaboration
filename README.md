@@ -42,6 +42,7 @@ Check out the video demo to see how the tool works in action: [Video Demo Link H
 2. Open new Terminal.
 3. Start the frontend:
    ```bash
+   cd Real-Time-Code-Collaboration
    cd frontend
    npm start
 4. Open your browser and navigate to http://localhost:3000.
