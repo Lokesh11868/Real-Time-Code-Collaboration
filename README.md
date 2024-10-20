@@ -19,28 +19,32 @@ Check out the video demo to see how the tool works in action: [Video Demo Link H
 - npm (v7+)
 
 ### Installation
-1. Clone the repository:
+1. Fork this repository into your local machine.
+2. Clone the repository:
    ```bash
    git clone https://github.com/Lokesh11868/Real-Time-Code-Collaboration.git
    cd Real-Time-Code-Collaboration
-2. Install the backend dependencies:
+3. Install the backend dependencies:
    ```bash
    cd backend
    npm install
-3. Install the frontend dependencies:
+   cd..
+4. Install the frontend dependencies:
    ```bash
    cd frontend
    npm install
+   cd..
 ### Running the Application
 1. Start the backend server:
    ```bash
    cd backend
-   node server.js
-2. Start the frontend:
+   npm start
+2. Open new Terminal.
+3. Start the frontend:
    ```bash
    cd frontend
    npm start
-3. Open your browser and navigate to http://localhost:3000.
+4. Open your browser and navigate to http://localhost:3000.
 
 ## Why Use This Tool?
 
