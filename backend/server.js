@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: '*', // Allow all origins for development
+    origin: 'https://real-time-code-collaboration-nu.vercel.app', // Allow all origins for development
     methods: ['GET', 'POST'],
   },
 });
