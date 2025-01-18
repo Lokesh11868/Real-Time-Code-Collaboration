@@ -56,6 +56,10 @@ io.on('connection', (socket) => {
       console.log(`Room not found for message from user ${username}.`);
     }
   });
+  //Handle Language Change
+  socket.on("languageChange",({roomCode,language})=>{
+    io.to(roomCode).emit("languageUpdate",language);
+  })
 
   // Handle user leaving the room
   socket.on('leave-room', ({ username, roomCode }) => {

@@ -31,6 +31,7 @@ const App = () => {
     const selectedLanguage = event.target.value;
     setLanguage(selectedLanguage);
     setCode(sampleCodes[selectedLanguage]);
+    socket.emit("languageChange",{roomCode,language:selectedLanguage});
   };
 
   const sampleCodes = {
@@ -139,11 +140,14 @@ const App = () => {
     socket.on('code-update', (newCode) => {
       setCode(newCode);
     });
-
+    socket.on("languageUpdate",(selectedLanguage)=>{
+      setLanguage(selectedLanguage);
+    })
     return () => {
       socket.off('user-list');
       socket.off('message');
       socket.off('code-update');
+      socket.off('languageUpdate');
     };
   }, []);
 

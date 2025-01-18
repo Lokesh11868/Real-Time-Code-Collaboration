@@ -1,210 +1,253 @@
+/* Base styles for all devices */
 .app-container {
     font-family: monospace;
-    font-size:17px;
-    margin: 0px;
+    font-size: 17px;
+    margin: 0;
 }
-.auth{
-    height: 403px;
+.auth {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 90px;
-    background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90% );
+    padding: 50px;
+    background-image: radial-gradient(circle farthest-corner at 48.4% 47.5%, rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90%);
 }
 .auth-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 401px;
-  background-image: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 20px 20px 10px;
-  max-width: 400px;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    height:fit-content;
+    background-image: radial-gradient(circle 815px at 23.4% -21.8%, rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2%);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 10px;
+    text-align: center;
 }
-
-.username-input,
-.room-input {
-  width: 80%;
-  padding: 8px;
-  border: none;
-  outline: none;
-  color: white;
-  font-size:large;
-  font-family: monospace;
-  background-color: inherit;
-  border-bottom: 2px solid rgb(255, 255, 255);
-  margin: 8px 0;
+.username-input, .room-input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: large;
+    font-family: monospace;
+    background-color: inherit;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin: 8px 0;
 }
-
 .action-buttons {
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
-
 .action-buttons button {
-  background-color: #157ba3;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: monospace;
-  font-size:large;
-  margin-right: 10px;
+    background-color: #157ba3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: large;
+    margin-right: 10px;
 }
-
-.roomId-generate p{
+.roomId-generate p {
     font-size: large;
     font-family: monospace;
     font-weight: 500;
     color: white;
 }
-.roomId-generate strong{
-    font-size:larger;
-    font-family: monospace;
+.roomId-generate strong {
+    font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
     color: #157ba3;
 }
-.roomId-generate button,
-.Join-room{
+.roomId-generate button, .Join-room {
     background-color: #157ba3;
     border: none;
     outline: none;
     border-radius: 5px;
     font-family: monospace;
     padding: 13px;
-    font-size:large;
+    font-size: large;
     color: white;
 }
 .collaboration-container {
-  padding: 8px;
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(0, 0, 0);
-  height: 567px;
-}
-
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    height: inherit;
+  }
 .left-panel {
-  width: 180px;
-  padding: 10px;
-  margin-right: 10px;
-  border-radius:10px;
-  background: rgb(48,52,52);
-  background: linear-gradient(0deg, rgba(48,52,52,1) 0%, rgba(48,52,52,1) 100%);
+    width: 180px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(48,52,52,1) 0%, rgba(48,52,52,1) 100%);
 }
-
 .left-panel h2 {
-  margin-bottom: 10px;
-  color: #157ba3;
-  font-size: 25px;
-  text-align: center;
+    margin-bottom: 10px;
+    color: #157ba3;
+    font-size: 25px;
+    text-align: center;
 }
-
 .room-buttons {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 20px;;
+    padding: 20px;
 }
-
 .room-buttons button {
-  font-family: monospace;
-  border: none;
-  outline: none;
-  background-color: #157ba3;
-  padding: 8px;
-  color: white;
-  border-radius: 10px;
+    font-family: monospace;
+    border: none;
+    outline: none;
+    background-color: #157ba3;
+    padding: 8px;
+    color: white;
+    border-radius: 10px;
 }
-
 .code-editor-container {
-  flex: 1;
+    flex: 1;
 }
-
 .chat-container {
-  width: 20%;
-  padding: 6px;
-  display: flex;
-  flex-direction: column;
-  
-}
-.Choose-language{
+    width: 20%;
+    padding: 6px;
     display: flex;
-    flex: row;
-    justify-content:center;
+    flex-direction: column;
+}
+.Choose-language {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.Choose-language p{
+.Choose-language p {
     color: white;
     font-size: 15px;
 }
-.Choose-language select{
-    background-color:#157ba3;
+.Choose-language select {
+    background-color: #157ba3;
     color: #ffffff;
-    border:none;
+    border: none;
     outline: none;
     height: 35px;
     padding: 10px;
     border-radius: 10px;
 }
 .chat-container h3 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
-
 .chat-box {
-  height: 70vh;
-  overflow-y: auto;
-  border: none;
-  outline: none;
-  background-color: rgb(0, 0, 0);
-  border-radius: 10px;
-  color: white;
-  margin-bottom: 10px;
-  padding: 10px;
-  margin-left: 6px;
-  font-size: medium;
-  background: rgb(48,52,52);
-background: linear-gradient(0deg, rgba(48,52,52,1) 0%, rgba(48,52,52,1) 100%);
-
+    height: 70vh;
+    overflow-y: auto;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 6px;
+    font-size: medium;
+    background: linear-gradient(0deg, rgba(48,52,52,1) 0%, rgba(48,52,52,1) 100%);
 }
-.msg{
+.msg {
     display: flex;
     flex-direction: row;
 }
-.msg input{
+.msg input {
     border: none;
     outline: none;
-    border-bottom: white;
     color: white;
     margin-left: 6px;
     margin-right: 4px;
     border-radius: 10px;
-    background: rgb(48,52,52);
-background: linear-gradient(0deg, rgba(48,52,52,1) 0%, rgba(48,52,52,1) 100%);
+    background: linear-gradient(0deg, rgba(48,52,52,1) 0%, rgba(48,52,52,1) 100%);
 }
-.msg button{
+.msg button {
     border: none;
     outline: none;
     color: white;
-    background-color:#157ba3;
+    background-color: #157ba3;
     border-radius: 10px;
 }
 .message-input {
-  width: calc(100% - 50px);
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-right: 10px;
+    width: calc(100% - 50px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
 }
 .code-highlight {
-  font-family: monospace;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #1e1e1e;
-  color: #ffffff;
-  overflow-y: auto;
-  height: 50vh;
+    font-family: monospace;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    overflow-y: auto;
+    height: 50vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .auth-container {
+        width: 100%;
+        padding: 15px;
+    }
+    .username-input, .room-input {
+        width: 90%;
+        font-size: medium;
+    }
+    .action-buttons button {
+        padding: 8px 16px;
+        font-size: medium;
+    }
+    .collaboration-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .left-panel {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .chat-container {
+        width: 100%;
+    }
+}
+
+/* For very small screens (mobile phones) */
+@media (max-width: 480px) {
+    .auth {
+        padding: 20px;
+    }
+    .auth-container {
+        padding: 10px;
+        box-shadow: none;
+    }
+    .action-buttons {
+        flex-direction: column;
+    }
+    .action-buttons button {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .msg {
+        flex-direction: column;
+    }
+    .msg input {
+        width: calc(100% - 12px);
+        margin-bottom: 10px;
+    }
+    .msg button {
+        width: 100%;
+    }
+    .chat-box {
+        height: 50vh;
+    }
 }
