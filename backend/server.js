@@ -9,6 +9,7 @@ const io = socketIo(server, {
   cors: {
     origin: 'https://real-time-code-collaboration-nu.vercel.app', // Allow all origins for development
     methods: ['GET', 'POST'],
+    credentials: true,
   },
 });
 // Middleware

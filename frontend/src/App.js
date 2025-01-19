@@ -3,7 +3,11 @@ import io from 'socket.io-client';
 import { Editor } from '@monaco-editor/react';
 import './style.css'; // Import the external CSS file
 
-const socket = io('wss://real-time-code-collab.vercel.app');
+const socket = io("https://real-time-code-collab.vercel.app", {
+  transports: ['websocket'],
+  withCredentials: true, // if you're using cookies or sessions
+});
+  
 
 const generateRoomId = () => {
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
